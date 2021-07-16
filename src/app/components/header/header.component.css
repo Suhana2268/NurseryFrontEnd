@@ -1,0 +1,41 @@
+.jumbotron {
+    background: #D3959B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #BFE6BA, #D3959B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #BFE6BA, #D3959B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    color: black;
+    margin: 0px auto;
+    padding: 70px 30px 70px 30px;
+}
+
+.row header {
+    margin:0px auto;
+    padding: 0px auto;
+}
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 400px;
+}
+.para {
+    color: brown;
+}
+.first {
+    background-color:black;
+    
+}
+
+.btn {
+    background-color:whitesmoke;
+    float: right;
+    height: 30px;
+    
+}
+.search {
+    float: right;
+}
+
+.logged {
+    float: right;
+}

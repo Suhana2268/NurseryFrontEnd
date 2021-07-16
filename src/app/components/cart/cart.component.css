@@ -1,0 +1,15 @@
+.shop {
+    background-color: black;
+    margin-top: 3%;
+    width: 945px;
+    
+}
+.shopCart {
+    color: white;
+}
+table {
+    border: 3px solid;
+}
+.values {
+    color: green;
+}

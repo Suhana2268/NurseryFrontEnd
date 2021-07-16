@@ -1,0 +1,58 @@
+.carousel-cell{
+    width: auto;
+    height: auto;
+
+}
+carousel {
+    z-index: 99;
+}
+.cl {
+   padding: 3%;
+    float: inline;
+    
+  
+}
+.row1 {
+    padding-left: 3%;
+    
+  
+}
+.col1 {
+    padding:3%;
+    padding-left: 5%;
+}
+.banners {
+    padding-left: 10%;
+    padding-top: 3%;
+}
+.cardsp {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.learn {
+    padding:5%
+
+}
+.round {
+    padding:3%;
+}
+.img1{
+    border-radius: 150%;
+}
+.head2{
+    padding:3%;
+    padding-bottom: 3%;
+}
+.desc {
+   text-align: center;
+   padding-top: 10%;
+}
+iframe{
+    
+    height: 600px;
+    width: 1200px;
+    margin-bottom: 3%;
+    margin-left: 150px;
+    padding-top: 3%;
+}
+

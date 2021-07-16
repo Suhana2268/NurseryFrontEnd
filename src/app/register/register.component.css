@@ -1,0 +1,46 @@
+.register {
+  padding:20px;
+    border: 3px solid;
+    border-color: black;
+    border-radius: 10px;
+    background-color:  #618685;
+
+}
+.form-group {
+    padding:1%;
+}
+.from-control {
+    padding: 1%;
+}
+.lab{
+    padding: 1%;
+    font-weight: bold;
+}
+.container {
+    padding:300px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+
+}
+.tt {
+    padding-left: 2px;
+    color: rgb(206, 194, 194);
+}
+#check {
+    margin-left: 3px;
+}
+#txtCheck {
+    margin-left: 25px;
+
+}
+.btnlab {
+    font-weight: bold;
+    width: 20%;
+}
+
+.lab1 {
+    padding: 1%;
+    font-weight: bold;
+    color: rgb(199, 192, 202);
+}

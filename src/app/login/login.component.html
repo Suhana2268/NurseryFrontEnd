@@ -1,0 +1,46 @@
+
+<div class="container-fluid log" align = "center">
+    <div class="row">
+        <div class="col-md-6 d-none d-md-flex"></div>
+        <div class="col-md-6 bg-secondary">
+            <div class="login d-flex align-items-center py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-xl-7 mx-auto">
+                            <h3 class="logLogin">Login</h3>
+                            <form class = "frm" [formGroup]="loginForm" (ngSubmit)="loginProcess()">
+                                <div class="form-group mb-3">
+
+                                    <input id="inputEmail" type="email" placeholder="Email address" required="" autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4"
+                                    formControlName="email" [ngClass]="{'is-invalid': submitted && control.email.errors}">
+                                    <div *ngIf="submitted && control.email.errors" class="text-warning">
+                                        <div *ngIf="control.email.errors.required">Username required</div> 
+                                    </div>
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <input id="inputPassword" type="password" placeholder="Password" required="" class="form-control rounded-pill border-0 shadow-sm px-4 text-primary"
+                                    formControlName="password" [ngClass]="{'is-invalid': submitted && control.password.errors}">
+                                    <div *ngIf="submitted && control.password.errors" class="text-warning">
+                                        <div *ngIf="control.password.errors.required">Password required</div> 
+                                    </div>
+                                </div>
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" checked class="custom-control-input checkedInp">
+                                    <label for="customCheck1" class="custom-control-label remember">Remember password</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm btn11">Sign in</button>
+                               <div>
+                                   <small class = "acnt">
+                                       Dont have an account?<a class = "nav-link" routerLink = '/register'>Register here!</a>
+                                   </small>
+                               </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

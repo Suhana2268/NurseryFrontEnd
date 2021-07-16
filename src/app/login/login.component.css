@@ -1,0 +1,32 @@
+.log {
+  
+    padding-right: 32%;
+    padding-top: 7%;
+}
+
+.logLogin {
+    color: white;
+    padding-bottom: 10%;
+    font-weight: bold;
+}
+.remember {
+    color: white;
+    
+}
+.checkedInp {
+    padding-left: 10%;
+}
+.btn11 {
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
+    font-style: Times New Roman;
+    width: 200px;
+}
+.nav-link {
+    color: black;
+    font-weight: bold;
+}
+.acnt{
+    color: white;
+}
