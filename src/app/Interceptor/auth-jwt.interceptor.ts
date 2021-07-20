@@ -14,7 +14,8 @@ export class AuthJwtInterceptor implements HttpInterceptor {
   constructor() { }
 
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    if (sessionStorage.getItem('token') && sessionStorage.getItem('userId')) {
+    console.log("Bearer"+sessionStorage.getItem('token'));
+    if (sessionStorage.getItem('token')) {
       console.log("Interceptor called with "+ sessionStorage.getItem('token'));
       request = request.clone({ headers: request.headers.set('Authorization', 'Bearer ' + sessionStorage.getItem('token')) })
     }

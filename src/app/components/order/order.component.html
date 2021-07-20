@@ -2,34 +2,31 @@
     <div class="title">
         <h2>Product Order Form</h2>
     </div>
+
   <div class="d-flex">
     <form action="" method="">
       <label>
-        <span class="fname">Name</span>
+        <span class="fname">{{cust?.customerName}}</span>
       </label>
       <br>
       <label>
-        <span>houseNumber</span>
+        <span>{{cust?.address?.houseNo}}</span>
       </label>
       <br>
       <label>
-        <span>Colony </span>
+        <span>{{cust?.address?.colony}}</span>
       </label>
       <br>
       <label>
-        <span>City</span>
+        <span>{{cust?.address?.city}}</span>
       </label>
       <br>
       <label>
-        <span>State</span>
+        <span>{{cust?.address?.state}}</span>
       </label>
       <br>
       <label>
-        <span>Pincode</span>
-      </label>
-      <br>
-      <label>
-        <span>Mobile</span>
+        <span>{{cust?.address?.pincode}}</span>
       </label>
       <br>
       <div class = "btndiv">
@@ -44,16 +41,8 @@
           <th colspan="2">Your order</th>
         </tr>
         <tr>
-          <td>Product Name x 2(Qty)</td>
-          <td>$88.00</td>
-        </tr>
-        <tr>
-          <td>Subtotal</td>
-          <td>$88.00</td>
-        </tr>
-        <tr>
-          <td>Shipping</td>
-          <td>Free shipping</td>
+          <td>Total Cost</td>
+          <td>{{totalCost | currency:'INR'}}</td>
         </tr>
       </table><br>
       <div>

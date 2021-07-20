@@ -38,8 +38,17 @@ return this.loginForm.controls;
          
           sessionStorage.setItem('token',result.token);
           sessionStorage.setItem('userId',result.userId);
+          sessionStorage.setItem('userType', result.userType);
+          console.log(sessionStorage.getItem('token'));
+          if(result.userType === "1") {
+            this.router.navigate(['/home']);
+
+          }
+          else {
+            this.router.navigate(['/admin']);
+          }
          
-          this.router.navigate(['/home']);
+          
           
 
       }, (error) => { 

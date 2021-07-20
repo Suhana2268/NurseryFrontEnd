@@ -1,0 +1,47 @@
+<div class="container mt-5 mb-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-10">
+        <div class="card">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="images p-3">
+                <div> <img [src] = "'data:image/jpeg;base64,'+image.picByte" alt="No image available" width="500" height="400" /> </div>
+                </div>
+            </div>
+  
+            <div class="col-md-6">
+              <div class="product p-4">
+                
+              <div class="mt-4 mb-3">
+                <h5 class="text-uppercase">{{plant.commonName}} </h5>
+                <div class="price d-flex flex-row align-items-center"> <span class="act-price">{{plant.plantCost | currency : 'INR'}}</span>
+                    
+                </div>
+            </div>
+           <b> Description</b>
+            <p class="about">{{plant.plantDescription}}</p>
+            
+            <hr>
+            <b>Specifications</b><br>
+            Height:{{plant.plantHeight}}<br>
+            Type:{{plant.typeOfPlant}}<br>
+            Bloom time:{{plant.bloomTime}}<br>
+            Purpose:{{plant.medicinalOrCulinaryUse}}<br>
+            Temperature:{{plant.temparature}}<br>
+            Difficulty level:{{plant.difficultyLevel}}<br>
+           
+  
+            
+            
+              <div class="cart mt-4 align-items-center"> <button class="btn btn-danger text-uppercase mr-2 px-4">Add to cart</button> <i class="fa fa-heart text-muted"></i> <i class="fa fa-share-alt text-muted"></i> </div>
+              <div class="cart mt-4 align-items-center"> <button class="btn btn-danger text-uppercase mr-2 px-4">Buy Now</button> <i class="fa fa-heart text-muted"></i> <i class="fa fa-share-alt text-muted"></i> </div>           
+              </div>
+            </div>
+  
+  
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

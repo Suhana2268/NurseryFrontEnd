@@ -1,80 +1,87 @@
-
-
-<div *ngIf="router.url !== '/login' && router.url !== '/register' && router.url !== '/order' && router.url !== '/cart' && router.url !== '/address' && router.url !== '/payment'">
+<div *ngIf="router.url !== '/login' && router.url !== '/register' && router.url !== '/order' && router.url !== '/cart' && router.url !== '/address' && router.url !== '/payment' && router.url !== '/payment'">
    
-<nav class = "navbar navbar-dark navbar-expand-sm fixed-top first">
-        <div class = "container">
-            <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#Navbar">
-                 <span class = "navbar-toggler-icon"></span>
-            </button>
-            <a class = "navbar-brand mr-auto"><img src = "\assets\icons8-natural-food-48.png" width="40px" height="40px"></a>
-            <div class = "collapse navbar-collapse topNav" id = "Navbar">
-                <ul class = "navbar-nav mr-auto">
-                    <li class="nav-item"><a class = "nav-link" routerLink = '/home'>Home</a></li>
-                    <li class="nav-item"><a class = "nav-link" routerLink = 'Planters'>Planters</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Plants
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a routerLink="/admin/users" class="dropdown-item">Medicinal Plants</a>
-                            <a routerLink ="/admin/plants" class="dropdown-item">Herb Plants</a>
-                            <a routerLink ="/admin/planters" class="dropdown-item">Flower Plants</a>
-                            <a routerLink ="/admin/planters" class="dropdown-item">Fruit Plants</a>
-        
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            Seeds
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a routerLink="/admin/users" class="dropdown-item">Medicinal Plants</a>
-                            <a routerLink ="/admin/plants" class="dropdown-item">Herb Plants</a>
-                            <a routerLink ="/admin/planters" class="dropdown-item">Flower Plants</a>
-                            <a routerLink ="/admin/planters" class="dropdown-item">Fruit Plants</a>
-        
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
-                            SignUp
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a routerLink="/login" class="dropdown-item">Login</a>
-                            <a routerLink ="/register" class="dropdown-item">Register</a>
-        
-                        </div>
-                    </li>
-                    <li>
-                    
-                   <!--   <div class = "search">
-                          <input type = "text" placeholder="Search" name = "search">
-                          <img src = "\assets\icons8-search-50.png" height="30px">
+    <nav class = "navbar navbar-dark navbar-expand-sm fixed-top first">
+            <div class = "container">
+                <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#Navbar">
+                     <span class = "navbar-toggler-icon"></span>
+                </button>
+                <a class = "navbar-brand mr-auto"><img src = "\assets\icons8-natural-food-48.png" width="40px" height="40px"></a>
+                <div class = "collapse navbar-collapse topNav" id = "Navbar">
+                    <ul class = "navbar-nav mr-auto">
+                        <li class="nav-item"><a class = "nav-link" routerLink = '/home'>Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Planters
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a routerLink="/planters/{{AllPlanters}}" class="dropdown-item">All Planters</a>
+                                <a routerLink ="/planters/shape1/{{Round}}" class="dropdown-item">Round</a>
+                                <a routerLink ="/planters/shape2/{{Square}}" class="dropdown-item">Square</a>
+            
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Plants
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a routerLink="/plants/{{AllPlants}}" class="dropdown-item">All Plants</a>
+                                <a routerLink ="/plants/type1/{{Herbal}}" class="dropdown-item">Herb Plants</a>
+                                <a routerLink ="/plants/type2/{{Medical}}" class="dropdown-item">Medicinal Plants</a>
+            
+                            </div>
+                        </li>
     
-                      </div>-->
-                      </li>
-                    
-                </ul>
-            </div>
-                    
-        </div>
-    </nav>    
-    <header class = "jumbotron">
-        <div class = "container">
-            <div class = "row row-header">
-                <div class = "col-12 col-sm-6">
-                    <h1>Online Nursery</h1>
-                    <p class = "para">A platform where you can buy desired plants, seeds and other nursery related items at very reasonable price!</p>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Seeds
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a routerLink="/seed/{{AllSeeds}}" class="dropdown-item">All Seeds</a>
+                                <a routerLink ="/seed/type1/{{Monocotyledonous}}" class="dropdown-item">Monocotyledonous</a>
+                                <a routerLink ="/seed/type2/{{Dicotyledonous}}" class="dropdown-item">Dicotyledonous</a>
+            
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                SignUp
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a routerLink="/login" class="dropdown-item">Login</a>
+                                <a routerLink ="/register" class="dropdown-item">Register</a>
+            
+                            </div>
+                        </li>
+                        <li>
+                        
+                       <!--   <div class = "search">
+                              <input type = "text" placeholder="Search" name = "search">
+                              <img src = "\assets\icons8-search-50.png" height="30px">
+        
+                          </div>-->
+                          </li>
+                        
+                    </ul>
                 </div>
-                <div class = "col-12 col-sm-6">
+                        
+            </div>
+        </nav>    
+        <header class = "jumbotron">
+            <div class = "container">
+                <div class = "row row-header">
+                    <div class = "col-12 col-sm-6">
+                        <h1>Online Nursery</h1>
+                        <p class = "para">A platform where you can buy desired plants, seeds and other nursery related items at very reasonable price!</p>
+                    </div>
+                    <div class = "col-12 col-sm-6">
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-</div>
-    
+        </header>
+    </div>
+        
